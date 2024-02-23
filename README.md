@@ -59,6 +59,21 @@ We are on a mission to simplify your academic journey by providing a seamless an
 
 ## How Dotnotes Works
 
-Dotnotes operates by utilizing the Google Drive V3 API, effectively transforming Google Drive into a file system. We navigate this virtual landscape for notes using file IDs, similar to inodes in Linux systems. To address latency issues, our Flask/ASP.NET backend employs Redis caching. Notably, one of us took the initiative to rewrite the backend API in ASP.NET – a seemingly unnecessary and stupid enhancement. The frontend is built using React, providing a standard and reliable user interface. Our blog, constructed with Hugo as a Static Site Generator, incorporates TinaCMS for straightforward content management. The backend is hosted on an Azure WebApp instance, while the frontend resides on Vercel. To ensure security and optimize performance, Dotnotes integrates with Cloudflare. In summary, Dotnotes employs a combination of technologies and strategic hosting to provide a seamless and efficient platform for all your academic needs.
+Dotnotes operates by utilizing the Google Drive V3 API, effectively transforming Google Drive into a file system. We navigate this virtual landscape for notes using file IDs, similar to inodes in Linux systems. To address latency issues, our Flask/ASP.NET backend employs Redis caching. Notably, one of us took the initiative to rewrite the backend API in ASP.NET – a seemingly unnecessary and stupid enhancement. The frontend is built using React, providing a standard and reliable user interface. Our blog, constructed with Hugo as a Static Site Generator, incorporates TinaCMS for straightforward content management. The backend is hosted on an Azure WebApp instance, while the frontend resides on Vercel. To ensure security and optimize performance, Dotnotes integrates with Cloudflare. The android app is the solo efforts of [@Dhruvgera][Dhruvgera], written in flutter, it uses the same backend API as our webapp. It wouldn't have been possible without [@lakshayGMZ][lakshayGMZ]'s efforts in writing most of the frontend code and experimenting with new features. [@AnishHazra][AnishHazra] and [@Nandini-0703][Nandini-0703] worked on the frontend design for dotnotes, while [@Nandini-0703][Nandini-0703] also working on the other features as well.
+
+It took a lot of efforts building the database from scratch, including a lot of automation scripts, scrappers, spiders (for instance [@martian0x80][martian0x80]'s `spidermap` scraps the dotnotes api to automate sitemap updates), and scripts that are responsible for organizing and maintaining the filesystem tree. In summary, Dotnotes employs a combination of technologies and strategic hosting to provide a seamless and efficient platform for all your academic needs.
 
 ---
+
+## Authors
+- [@martian0x80][martian0x80]
+- [@lakshayGMZ][lakshayGMZ]
+- [@Dhruvgera][Dhruvgera]
+- [@Nandini-0703][Nandini-0703]
+- [@AnishHazra][AnishHazra]
+
+[martian0x80]: https://github.com/martian0x80
+[lakshayGMZ]: https://github.com/lakshayGMZ
+[Dhruvgera]: https://github.com/Dhruvgera
+[Nandini-0703]: https://github.com/Nandini-0703
+[AnishHazra]: https://github.com/AnishHazra
